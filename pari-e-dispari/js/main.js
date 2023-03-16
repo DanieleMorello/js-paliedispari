@@ -37,6 +37,4 @@ let flag = "dispari";
 if (somma % 2 == 0) {
   flag = "pari";
 }
-userChoice === flag
-  ? console.log("Congratulation: You Win!!!")
-  : console.log("Sorry Pc Wins!!!");
+userChoice === flag ? console.log("Congratulation: You Win!!!") : console.log("Sorry Pc Wins!!!");
