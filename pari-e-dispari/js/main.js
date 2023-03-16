@@ -6,7 +6,7 @@
  */
 
 // L’utente sceglie pari o dispari. 
-const userChoice = prompt('Scegli pari(p) o dispari (d)')
+const userChoice = prompt('Scegli pari o dispari')
 console.log('Scelta utente: ',userChoice)
 
 // L’utente inserisce un numero da 1 a 5.
@@ -22,17 +22,19 @@ function randomNumber(min,max){ //Funzione googlata
 // Assegno il valore della funzione ad una costante
 const pcNumb = randomNumber(1, 5)
 console.log('Numero random pc: ',pcNumb);
-
-
+let flag = 'dispari'
 //Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 function sum(numb1, numb2) {
   const result = (numb1 + numb2)
+  console.log('Somma: ',result,`${flag}`);
   if (result % 2 == 0) {
-    console.log(`La somma tra ${userNumb} e ${pcNumb} è pari`);
-  } else {
-    console.log(`La somma tra ${userNumb} e ${pcNumb} è dispari`);
+    flag = 'pari'
   }
-  return result
+  userChoice === flag ? console.log('Congratulation: You Win!!!') : console.log('Sorry Pc Wins!!!')
+  
 }
 
-console.log(sum(userNumb, pcNumb));
+// Salvo il risultato in una variabile
+const somma = sum(userNumb, pcNumb)
+
+
