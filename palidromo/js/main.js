@@ -9,14 +9,14 @@ const userWord = prompt("Inserisci una parola");
 // Creare una funzione per capire se la parola inserita è palindroma.
 
 // Creo la funzione isPalindrome
-function isPalindrome() {
+function isPalindrome(word) {
   // creo un array e lo riempio con la parola scritta dall' utente
   const wordLetters = [];
-  wordLetters.push(userWord);
+  wordLetters.push(word);
   console.log(wordLetters);
 
   // Creo una variabile carattere e inserisco ddento di essa le singole letter della parola scritta dall'utente
-  let wordLetter = userWord.split("");
+  let wordLetter = word.split("");
   console.log(wordLetter);
 
   // Creo una variabile e inserisco le lettere nell' ordine inverso
@@ -28,10 +28,10 @@ function isPalindrome() {
   console.log(inverseWordUser);
 
   // Stabilisco l condizioni per cui la parola è palindroma
-  if (userWord === inverseWordUser) {
-    console.log(`${userWord} è palindroma`);
+  if (word === inverseWordUser) {
+    console.log(`${word} è palindroma`);
   } else {
-    console.log(`${userWord} non è palindroma`);
+    console.log(`${word} non è palindroma`);
   }
 }
 
