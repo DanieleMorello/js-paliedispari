@@ -33,8 +33,8 @@ function sum(numb1, numb2) {
 // Salvo il risultato in una variabile
 const somma = sum(userNumb, pcNumb);
 
-let flag = "dispari";
+let check = "dispari";
 if (somma % 2 == 0) {
-  flag = "pari";
+  check = "pari";
 }
-userChoice === flag ? console.log("Congratulation: You Win!!!") : console.log("Sorry Pc Wins!!!");
+userChoice === check ? console.log("Congratulation: You Win!!!") : console.log("Sorry Pc Wins!!!");
