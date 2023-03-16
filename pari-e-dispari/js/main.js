@@ -8,3 +8,7 @@
 // L’utente sceglie pari o dispari. 
 const userChoice = prompt('Scegli pari(p) o dispari (d)')
 console.log(userChoice);
+
+// L’utente inserisce un numero da 1 a 5.
+const userNumb = Number(prompt('Inserisci un numero da 1 a 5'))
+console.log(userNumb)
