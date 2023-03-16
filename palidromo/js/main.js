@@ -35,4 +35,5 @@ function isPalindrome() {
   }
 }
 
+// Invoco la funzione
 isPalindrome(userWord);
